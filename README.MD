@@ -48,7 +48,7 @@ go run main.go 直接访问http://localhost:8200
 
 账号：demo  密码：123456
 
-项目为前后端分离，前端地址：[gfast-ui](https://github.com/tiger1103/gfast-ui)
+项目为前后端分离，前端地址：[gfast-ui](https://gitee.com/tiger1103/gfast-ui)
 
 
 ## 演示图
