@@ -1,7 +1,7 @@
 # 数据库连接
 [database]
     type    =   "mysql"
-    host    =   "127.0.0.1"
+    host    =   "192.168.1.198"
     port    =   "3306"
     user    =   "devuser"
     pass    =   "dev#password"
@@ -20,7 +20,7 @@
     ErrorLogEnabled  = true
     PProfEnabled     = true
     LogPath          = "./data/log/server_log"
-    SessionIdName    = "sysSessionId"
+    SessionIdName    = "sealmsSessId"
     SessionPath      = "./data/session"
     SessionMaxAge    = "24h"
     DumpRouterMap    = true
@@ -29,16 +29,16 @@
 
 # Redis数据库配置
 [redis]
-    default = "127.0.0.1:6379,3"
+    default = "192.168.1.198:6379,3,redispassword"
 
 #jwt配置
 [gToken]
     CacheMode = 2
-    CacheKey = "SToken:"
+    CacheKey = "SMSToken:"
     Timeout = 0
     MaxRefresh = 0
     TokenDelimiter="_"
-    EncryptKey = "koi29a83idakguqjq29asd9asd8a7jhq"
+    EncryptKey = "48ea90e65be432e7391a002a40c0fdcd"
     AuthFailMsg = "登录超时，请重新登录"
     MultiLogin = true
 

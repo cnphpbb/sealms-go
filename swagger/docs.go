@@ -3363,8 +3363,8 @@ var SwaggerInfo = swaggerInfo{
 	Host:        "localhost",
 	BasePath:    "/system",
 	Schemes:     []string{},
-	Title:       "gfast API文档",
-	Description: "gfast 在线API文档",
+	Title:       "SealMS API文档",
+	Description: "SealMS 在线API文档",
 }
 
 type s struct{}

@@ -666,9 +666,9 @@ definitions:
 host: localhost
 info:
   contact: {}
-  description: gfast 在线API文档
+  description: SealMS 在线API文档
   license: {}
-  title: gfast API文档
+  title: SealMS API文档
   version: "1.0"
 paths:
   /system/Auth/userList:

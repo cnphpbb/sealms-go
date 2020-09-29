@@ -1,8 +1,8 @@
 {
     "swagger": "2.0",
     "info": {
-        "description": "gfast 在线API文档",
-        "title": "gfast API文档",
+        "description": "SealMS 在线API文档",
+        "title": "SealMS API文档",
         "contact": {},
         "license": {},
         "version": "1.0"

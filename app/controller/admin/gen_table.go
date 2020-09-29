@@ -250,7 +250,7 @@ func (c *Gen) BatchGenCode(r *ghttp.Request) {
 	r.Response.Header().Set("Content-Length", gconv.String(r.Response.BufferLength()))
 	r.Response.Header().Set("Content-Type", "application/force-download")
 	r.Response.Header().Set("Accept-Ranges", "bytes")
-	r.Response.Header().Set("Content-Disposition", "attachment; filename=gfast.zip")
+	r.Response.Header().Set("Content-Disposition", "attachment; filename=SealMS.zip")
 	r.Response.Buffer()
 }
 

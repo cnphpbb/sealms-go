@@ -6,9 +6,9 @@ import (
 	"github.com/gogf/gf/frame/g"
 )
 
-// @title gfast API文档
+// @title SealMS API文档
 // @version 1.0
-// @description gfast 在线API文档
+// @description SealMS 在线API文档
 // @host localhost
 // @BasePath /system
 func main() {
