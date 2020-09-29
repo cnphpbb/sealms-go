@@ -3,18 +3,18 @@
     type    =   "mysql"
     host    =   "127.0.0.1"
     port    =   "3306"
-    user    =   "root"
-    pass    =   "123456"
-    name    =   "gfast_open"
+    user    =   "devuser"
+    pass    =   "dev#password"
+    name    =   "sealms_data"
     charset   = "utf8mb4" #数据库编码
-    maxIdle      = "10" #连接池最大闲置的连接数
+    maxIdle      = "5" #连接池最大闲置的连接数
     maxOpen     = "10" #连接池最大打开的连接数
     maxLifetime  = "30" #(单位秒)连接对象可重复使用的时间长度
     debug  = true
 
 #web服务器配置
 [server]
-    Address          = ":8200"
+    Address          = ":2975"
     ServerRoot       = "./public/resource"
     AccessLogEnabled = true
     ErrorLogEnabled  = true
@@ -29,12 +29,12 @@
 
 # Redis数据库配置
 [redis]
-    default = "127.0.0.1:6379,1"
+    default = "127.0.0.1:6379,3"
 
 #jwt配置
 [gToken]
     CacheMode = 2
-    CacheKey = "GToken:"
+    CacheKey = "SToken:"
     Timeout = 0
     MaxRefresh = 0
     TokenDelimiter="_"
@@ -60,8 +60,8 @@
 
 # Gen
 [gen]
-    author        = "gfast"
+    author        = "sealms"
     moduleName    = "module"
-    packageName   = "gfast"
+    packageName   = "sealms"
     autoRemovePre = true
     tablePrefix   = "t_,sys_"

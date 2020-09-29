@@ -21,7 +21,7 @@
 
 DROP TABLE IF EXISTS `auth_rule`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!40101 SET character_set_client = utf8 */;
+/*!40101 SET character_set_client = utf8mb4 */;
 CREATE TABLE `auth_rule` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `pid` int(10) unsigned NOT NULL DEFAULT '0' COMMENT '父ID',
@@ -140,7 +140,7 @@ CREATE TABLE `cms_category_news` (
   PRIMARY KEY (`id`) USING BTREE,
   UNIQUE KEY `cid_nid_unique` (`news_id`,`category_id`) USING BTREE,
   KEY `term_taxonomy_id` (`news_id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=196 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='cms应用 分类文章对应表';
+) ENGINE=InnoDB AUTO_INCREMENT=196 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='cms应用 分类文章对应表';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -178,7 +178,7 @@ CREATE TABLE `cms_news` (
   `news_source` varchar(150) NOT NULL DEFAULT '' COMMENT '转载文章的来源',
   `thumbnail` text COMMENT '缩略图',
   `is_jump` tinyint(3) unsigned NOT NULL DEFAULT '0' COMMENT '是否跳转地址',
-  `jump_url` varchar(255) CHARACTER SET latin1 COLLATE latin1_general_ci DEFAULT NULL COMMENT '跳转地址',
+  `jump_url` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT '跳转地址',
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=112 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='cms信息表';
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -275,7 +275,7 @@ CREATE TABLE `gen_table` (
   `update_time` datetime DEFAULT NULL COMMENT '更新时间',
   `remark` varchar(500) DEFAULT NULL COMMENT '备注',
   PRIMARY KEY (`table_id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT COMMENT='代码生成业务表';
+) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=COMPACT COMMENT='代码生成业务表';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -320,7 +320,7 @@ CREATE TABLE `gen_table_column` (
   `update_by` varchar(64) DEFAULT '' COMMENT '更新者',
   `update_time` datetime DEFAULT NULL COMMENT '更新时间',
   PRIMARY KEY (`column_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=441 DEFAULT CHARSET=utf8 COMMENT='代码生成业务表字段';
+) ENGINE=InnoDB AUTO_INCREMENT=441 DEFAULT CHARSET=utf8mb4 COMMENT='代码生成业务表字段';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -462,7 +462,7 @@ CREATE TABLE `plug_ad` (
   `ad_sort` int(11) NOT NULL COMMENT '排序',
   `ad_open` tinyint(2) NOT NULL COMMENT '1=审核  0=未审核',
   PRIMARY KEY (`ad_id`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=28 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+) ENGINE=MyISAM AUTO_INCREMENT=28 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -487,7 +487,7 @@ CREATE TABLE `plug_adtype` (
   `adtype_name` varchar(50) NOT NULL DEFAULT '' COMMENT '广告位名称',
   `adtype_sort` int(11) NOT NULL COMMENT '广告位排序',
   PRIMARY KEY (`adtype_id`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+) ENGINE=MyISAM AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -518,7 +518,7 @@ CREATE TABLE `plug_link` (
   `link_addtime` int(11) NOT NULL COMMENT '添加时间',
   `link_open` tinyint(2) NOT NULL DEFAULT '0' COMMENT '0禁用1启用',
   PRIMARY KEY (`link_id`) USING BTREE
-) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
