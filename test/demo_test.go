@@ -41,6 +41,10 @@ func HookDemo(t *testing.T) {
 	s.Run()
 }
 
+func Test()  {
+
+}
+
 func CbcEncrypt(t *testing.T) {
 	b, e := gaes.EncryptCBC([]byte("yxh123456"), []byte("HqmP1KLMuz09Q0Bu"), []byte("HqmP1KLMuz09Q0Bu"))
 	if e != nil {
