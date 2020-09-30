@@ -5,6 +5,7 @@
 .swp
 composer.lock
 gitpush.sh
+go.sum
 
 .idea/
 .settings/
