@@ -56,7 +56,7 @@ func TestEncryptCBC(t *testing.T) {
 	//		}
 	//	})
 	//}
-	str1 := EncryptCBC("demo#1234", AdminCbcPublicKey)
+	str1 := EncryptCBC("sealms#Admin", AdminCbcPublicKey)
 	t.Log(str1)
 }
 
