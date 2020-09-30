@@ -17,9 +17,11 @@ pkg/
 bin/
 public/resource/pub_upload/
 release/
+docs/
 
 cbuild
 */.DS_Store
 main
 *.exe
 tmp
+
