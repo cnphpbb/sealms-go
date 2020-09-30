@@ -4,10 +4,10 @@
 dirname=$(cd `dirname $0`; pwd)
 startFile=$dirname/release/start.sh
 
-cp -a $dirname/config.pro/ $dirname/release/config
-cp -a $dirname/public/ $dirname/release/public
-cp -a $dirname/swagger/ $dirname/release/swagger
-cp -a $dirname/template/ $dirname/release/template
+cp -a $dirname/config.pro $dirname/release/
+cp -a $dirname/public $dirname/release/
+cp -a $dirname/swagger $dirname/release/
+cp -a $dirname/template $dirname/release/
 
 function linux()
 {
