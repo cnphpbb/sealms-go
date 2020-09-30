@@ -8,6 +8,7 @@ cp -a $dirname/config.pro $dirname/release/
 cp -a $dirname/public $dirname/release/
 cp -a $dirname/swagger $dirname/release/
 cp -a $dirname/template $dirname/release/
+mv $dirname/release/config.pro $dirname/release/config
 
 function linux()
 {
